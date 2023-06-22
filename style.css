@@ -1,0 +1,239 @@
+body{
+    background-image: url(img/papan.jpg);
+    width: 100%;
+}
+*{
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.container{ 
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(img/co.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px 60px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 0 15px;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(img/hejo.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 25s linear infinite;
+}
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(img/hejo.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 25s linear infinite;
+}
+@keyframes back{
+100%{
+        background-position: 2000px 0;
+}
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    align-items: center;
+    background: url(img/hejo.jpg);
+    -webkit-background-clip: border-box;
+    animation: back 25s linear infinite;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+.about{
+    height: 600px;
+}
+.image{
+    align-items: center;
+    padding: 20px 18%;
+    display: block;
+    margin-left: center;
+    margin-right: center;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border:var(--border);
+}
+.menu .box-container .box img{
+    height: 10rem;
+    width: 15rem;
+}
+.menu .box-container .box h3{
+    color:#fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu .box-container .box:hover{
+    background: #fff;
+}
+.menu .box-container .box:hover > *{
+    color:var(--black);
+}
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.review .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: black;
+    padding: 2rem 0;
+}
+.review .box-container .box img{
+    height: 300px;
+    width: 450px;
+}
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 40%;
+    object-fit: cover;
+}
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: yellow;
+}
+.contact {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/su.jpg);
+    padding: 50px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contact h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 100;
+  }
+  
+  .contact-details {
+    color: #F7EFE5;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  .contact-details p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-details a {
+    color: #F7EFE5;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
